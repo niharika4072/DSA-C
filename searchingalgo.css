@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2E3A46; /* Soft Dark Gray */
+    --secondary-color: #F4F4F9; /* Off-White */
+    --accent-color: #6C757D; /* Muted Gray */
+    --light-color: #FFFFFF; /* White */
+    --text-color: #333; /* Dark Text */
+    --hover-color: #495057; /* Darker Muted Gray */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Same background color */
+    color: #33334d; /* Dark text color */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Navigation Bar (on the left side) */
+.navbar {
+    width: 250px;
+    background-color: #2E3A46; /* Preferred dark color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    position: fixed; /* Keep navbar fixed to the left */
+    height: 100vh; /* Full height to fill the left side */
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+}
+
+.navlist li {
+    margin: 10px 0;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #F4F4F9; /* Gold text */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navlist a:hover {
+    background-color: #6d5c6a; /* Soft purple hover effect */
+    color: #f4f4f4;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box-main {
+    max-width: 800px;
+    margin-left: 170px;
+    width: 100%;
+    background-color: #fff; /* White background for the box */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.firsthalf2 ul {
+    list-style: none;
+}
+
+.firsthalf2 li {
+    margin: 10px 0;
+}
+
+.firsthalf2 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #6d5c6a;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Soft purple color */
+}
+
+.firsthalf2 a:hover {
+    color: #ceb040; /* Gold on hover */
+}
+.vasu {
+        color: rgb(14, 13, 13);
+        margin-left: 300px;
+        max-width: 1000px;
+        font-size: large;
+        width: auto;
+        background-color: #fff;
+        /* White background for the box */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 4px solid #ceb040;
+        word-wrap: break-word;
+    }
+
+    .vasu b {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ceb040;
+    }
+
+    .out {
+        color: #fff;
+        background-color: #111111;
+    }
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        background-color: #ceb040;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: none; /* Hidden by default */
+        z-index: 1000; /* On top of other elements */
+    }
+
+    .back-to-top:hover {
+        background-color: #6d5c6a;
+    }
+
+
+    header {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo h1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    nav ul.navv{
+        list-style: none;
+        display: flex;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: var(--hover-color);
+        border-radius: 5px;
+    }
+    
+    nav ul li .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    
+    nav ul li .dropdown-content a {
+        color: var(--secondary-color);
+        padding: 10px 15px;
+        text-align: left;
+    }
+    
+    nav ul li .dropdown-content a:hover {
+        background-color: var(--hover-color);
+    }
+    
+    nav ul li:hover .dropdown-content {
+        display: block;
+    }
+    .overview p {
+        margin-top: 20px;
+        text-align: justify; 
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    :root {
+        --primary-color: #2E3A46; /* Soft Dark Gray */
+        --secondary-color: #F4F4F9; /* Off-White */
+        --accent-color: #6C757D; /* Muted Gray */
+        --light-color: #FFFFFF; /* White */
+        --text-color: #333; /* Dark Text */
+        --hover-color: #495057; /* Darker Muted Gray */
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; /* Same background color */
+        color: #33334d; /* Dark text color */
+    }
+    
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+    
+    /* Navigation Bar (on the left side) */
+    .navbar {
+        width: 250px;
+        background-color: #2E3A46; /* Preferred dark color */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+        position: fixed; /* Keep navbar fixed to the left */
+        height: 100vh; /* Full height to fill the left side */
+    }
+    
+    .navlist {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .navlist li {
+        margin: 10px 0;
+    }
+    
+    .navlist a {
+        text-decoration: none;
+        color: #F4F4F9; /* Gold text */
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navlist a:hover {
+        background-color: #6d5c6a; /* Soft purple hover effect */
+        color: #f4f4f4;
+    }
+    
+    /* Main content */
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .box-main {
+        text-align: center;
+        max-width: 800px;
+        margin-left: 170px;
+        width: 100%;
+        background-color: #fff; /* White background for the box */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    .overview p {
+        margin-top: 20px;
+        text-align: justify; 
+    }
+    
+    .overview h3 {
+        text-align: left;
+        margin-top: 20px; 
+    }
+    
+    .structure {
+        list-style: none;
+        text-align: left;
+        list-style-type:disc;
+    
+    }
+    
+    .structure ul {
+        margin-top: 5px;
+        padding-left: 50px;
+    }
+    
+    /* Styling for the box */
+    .table-box {
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    /* Styling for the table */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    table td {
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    /* Optional: Add spacing and styling for table cells */
+    table td {
+        width: 40px;
+        height: 40px;
+    }
+    
+    h2{
+        text-align: left;
+        margin-top: 30px;
+    }
+    
+    .box-ques ul{
+        list-style-type: none;
+        text-align: left;
+        ;
+    }
+    
+    .overview ul li {
+        margin: 10px 0;
+    }
+    
+    .overview a {
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        color: #6d5c6a;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* Soft purple color */
+    }
+    
+    .overview a:hover {
+        color: #ceb040; /* Gold on hover */
+    }
+    
+    
+        .out {
+            color: #fff;
+            background-color: #111111;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            background-color: #ceb040;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+            z-index: 1000; /* On top of other elements */
+        }
+    
+        .back-to-top:hover {
+            background-color: #6d5c6a;
+        }
+    
+    
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logo h1 {
+            font-size: 24px;
+            margin-left: 20px;
+        }
+        nav ul.navv{
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            padding: 10px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--hover-color);
+            border-radius: 5px;
+        }
+        
+        nav ul li .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--primary-color);
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        
+        nav ul li .dropdown-content a {
+            color: var(--secondary-color);
+            padding: 10px 15px;
+            text-align: left;
+        }
+        
+        nav ul li .dropdown-content a:hover {
+            background-color: var(--hover-color);
+        }
+        
+        nav ul li:hover .dropdown-content {
+            display: block;
+        }
+     /* Main content */
+     .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .box-main {
+        max-width: 800px;
+        margin-left: 170px;
+        width: 100%;
+        background-color: #fff; /* White background for the box */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    .firsthalf2 ul {
+        list-style: none;
+    }
+    
+    .firsthalf2 li {
+        margin: 10px 0;
+    }
+    
+    .firsthalf2 a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #6d5c6a;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* Soft purple color */
+    }
+    
+    .firsthalf2 a:hover {
+        color: #ceb040; /* Gold on hover */
+    }
+    .vasu {
+            color: rgb(14, 13, 13);
+            margin-left: 300px;
+            max-width: 1000px;
+            font-size: large;
+            width: auto;
+            background-color: #fff;
+            /* White background for the box */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 4px solid #ceb040;
+            word-wrap: break-word;
+        }
+    
+        .vasu b {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ceb040;
+        }
+    
+        .out {
+            color: #fff;
+            background-color: #111111;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            background-color: #ceb040;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+            z-index: 1000; /* On top of other elements */
+        }
+    
+        .back-to-top:hover {
+            background-color: #6d5c6a;
+        }
+        pre {
+            display: block;
+            font-family: monospace;
+            unicode-bidi: isolate;
+            white-space: pre;
+            margin: 1em 0px;
+            text-align: left;
+        }
+
+   
+    

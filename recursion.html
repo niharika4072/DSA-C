@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Recursion</title>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Programming Hub</h1>
+            </div>
+            <nav>
+                <ul class="navv">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="loginform.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <!-- Left Navigation Bar -->
+        <nav class="navbar">
+            <ul class="navlist">
+                <li><a href="2D array.html">2D Array</a></li>
+                <li><a href="graph.html">Graph</a></li>
+                <li><a href="LL.html">Linked List</a></li>
+                <li><a href="queues.html">Queue</a></li>
+                <li><a href="trees.html">Tree</a></li>
+                <li><a href="recursion.html">Recursion</a></li>
+                <li><a href="searchingalgo.html">Searching Algorithm</a></li>
+                <li><a href="singleDarray.html">Single Dimension Array</a></li>
+                <li><a href="sortingalgo.html">Sorting Algorithm</a></li>
+                <li><a href="Stacks.html">Stack</a></li>
+                <li><a href="string.html">Strings</a></li>
+                <li><a href="trees.html">Tree</a></li>
+            </ul>
+        </nav> 
+
+        <!-- Right Main Content -->
+        <section class="main-content">
+            <div class="box-main">
+                <h1 style="text-align: center;"><b>Recursion</b></h1>
+                <div class="overview">
+                    <p>Recursion is a programming technique in which a function calls itself directly 
+                        or indirectly to solve a problem by breaking it down into smaller, simpler 
+                        sub-problems. It’s widely used in algorithms and data structures for tasks 
+                        that can be defined in terms of similar sub-tasks, like traversing tree 
+                        structures, performing mathematical computations, or sorting data.
+                    </p>
+                    <br>
+                    <h3>Key Characterstics of Recursion</h3>
+                    <ul style="margin-top: 5px; margin-left: 15px; text-align: left; line-height: 20px;">
+                        <li><b>Base Case:</b> A condition that stops the recursion by returning a 
+                            direct answer, preventing infinite calls. Without a base case, recursion 
+                            would continue indefinitely.</li>
+                        <li><b>Recursive Case:</b> The part where the function calls itself with a 
+                            modified argument, gradually approaching the base case.</li>
+                    </ul>
+                    
+                    <h3>Types of Recursion</h3>
+                    <ul style="margin-top: 5px; margin-left: 15px; text-align: left; line-height: 20px;">
+                        <li><b>Direct Recursion:</b> When a function calls itself directly.</li>
+                        <li><b>Indirect Recursion:</b> When a function calls another function that eventually calls the original function.</li>
+                        <li><b>Tail Recursion:</b> When the recursive call is the last operation in the function, making it easier for some compilers to optimize by reusing stack frames (known as tail call optimization).</li>
+                        <li><b>Head Recursion:</b> When the recursive call occurs before any other operations in the function.</li>
+                    </ul>
+
+                    <h3>Recursive VS Iterative Approach</h3>
+                    <p>While recursion can simplify code, it’s often possible to convert a recursive solution into an iterative one. Iteration generally consumes less memory and can be faster, as it doesn’t involve the overhead of multiple function calls, but recursion can make the code more intuitive and easier to understand for problems with a recursive nature.</p>
+                    
+                    <h3>Applications of Recursion</h3>
+                    <ul style="margin-top: 5px; margin-left: 15px; text-align: left; line-height: 20px;">
+                        <li><b>Mathematics and Computations:</b> Calculations like powers, greatest common divisor, factorials, and Fibonacci numbers.</li>
+                        <li><b>Data Structures:</b> Traversing trees and graphs, and manipulating nested structures.</li>
+                        <li><b>Divide and Conquer Algorithms:</b> Sorting algorithms like merge sort and quicksort use recursion to break down and sort sub-arrays.</li>
+                        <li><b>Dynamic Programming: </b> Optimized recursive solutions are frequently used in dynamic programming problems where sub-solutions are cached to avoid redundant calculations.</li>
+                    </ul>
+
+                    <h2><b>Here are some codes related to Recursion</b></h2>
+                        <div class="box-ques">
+                                <ul>
+                                    <li><a href="#recQ1">1. Calculate Factorial of a number using Recursion</a></li>
+                                    <li><a href="#recQ2">2. Calculate Fibonacci of a number using Recursion</a></li>
+                                    <li><a href="#recQ3">3. Calculate sum of the natural numbers till 10 using recursion</a></li>
+                                    <li><a href="#recQ4">4. Covert a number into binary using recursion</a></li>
+                                    <li><a href="#recQ5">5. Find the largest element in integer array using recursion</a></li>
+                                    <li><a href="#recQ6">6. Find the smallest element in the integer array using recursion</a></li>
+                                    <li><a href="#recQ7">7. Enter the number from the user and add all digits of the number using recursion.</a></li> 
+                                    <li><a href="#recQ8">8. Find the arithmetic mean of an integer array using recursion</a></li>           
+                        </div>
+
+<pre>
+        <br>
+<b id="recQ1">1.CALCULATE FACTORIAL OF A NUMBER USING RECURSION</b>
+
+#include&lt;stdio.h&gt;
+
+int factorial(int n)
+{
+    if(n==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return (n*factorial(n-1));
+    }
+}
+
+int main()
+{
+    int n;
+    printf("Enter the number for finding factorial :");
+    scanf("%d",&n);
+    printf("FACTORIAL OF %d = %d",n,factorial(n));
+}
+        
+                </pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3>
+Enter the number for finding factorial :4
+FACTORIAL OF 4 = 24                  
+        </pre>
+        
+                <pre>
+        <br>
+<b id="recQ2">2.CALCULATE FIBONACCI OF A NUMBER USING RECURSION.</b>
+
+#include &lt;stdio.h&gt;
+
+int fibonacci(int n) 
+{
+    if (n &lt;= 1) 
+    {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() 
+{
+    int n;
+    printf("Enter a non-negative integer: ");
+    scanf("%d", &n);
+    
+    if (n &lt; 0) 
+    {
+        printf("Fibonacci is undefined for negative numbers.\n");
+    } 
+    else 
+    {
+        printf("Fibonacci sequence up to %d:\n", n);
+        for (int i = 0; i &lt;= n; i++) 
+        {
+            printf("%d ", fibonacci(i));
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+                
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3>
+Enter a non-negative integer: 5
+Fibonacci sequence up to 5:
+0 1 1 2 3 5  
+</pre>
+        
+<pre>
+        <br>
+<b id="recQ3">3.CALCULATE THE SUM OF NATURAL NUMBERS TILL 10 USING RECURSION.</b>
+
+#include &lt;stdio.h&gt;
+
+int sumNatural(int n) 
+{
+    if (n &lt;= 0) 
+    {
+        return 0;
+    }
+    return n + sumNatural(n - 1);
+}
+
+int main() 
+{
+    int result = sumNatural(10);
+    printf("The sum of natural numbers up to 10 is: %d\n", result);
+    return 0;
+}
+
+
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3>
+The sum of natural numbers up to 10 is: 55  
+</pre>
+
+    <pre>
+<br>
+<b id="recQ4">4.CONVERT A NUMBER INTO BINARY USING RECURSION</b>
+
+#include &lt;stdio.h&gt;
+
+void printBinary(int n) 
+{
+    if (n &gt; 1) 
+    {
+        printBinary(n / 2);
+    }
+    printf("%d", n % 2);
+}
+
+int main() 
+{
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    printf("Binary representation of %d is: ", number);
+    printBinary(number);
+    printf("\n");
+    
+    return 0;
+}
+
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3> 
+Enter a number: 100
+Binary representation of 100 is: 1100100 
+</pre>
+<pre>
+<br>
+<b id="recQ5">5.FIND THE LARGEST ELEMENT IN THE INTEGER ARRAY USING RECURSION.</b>
+
+#include &lt;stdio.h&gt;
+
+int findLargest(int arr[], int size) 
+{
+    if (size == 1) 
+    {
+        return arr[0];
+    }
+    
+    int largest = findLargest(arr, size - 1);
+    return arr[size - 1] &gt; largest ? arr[size - 1] : largest;
+}
+
+int main() 
+{
+    int arr[] = {3, 5, 7, 2, 8, 1, 4};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    
+    int largest = findLargest(arr, size);
+    printf("The largest element in the array is: %d\n", largest);
+    
+    return 0;
+}
+
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3>
+The largest element in the array is: 8  
+</pre>
+
+        <pre>
+<br>
+<b id="recQ6">6.FIND THE SMALLEST ELEMENT IN THE INTEGER ARRAY USING RECURSION.</b>
+#include &lt;stdio.h&gt;
+
+int findLargest(int arr[], int size) 
+{
+    if (size == 1) 
+    {
+        return arr[0];
+    }
+    
+    int largest = findLargest(arr, size - 1);
+    return arr[size - 1] &gt; largest ? arr[size - 1] : largest;
+}
+
+int main() 
+{
+    int arr[] = {3, 5, 7, 2, 8, 1, 4};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    
+    int largest = findLargest(arr, size);
+    printf("The largest element in the array is: %d\n", largest);
+    
+    return 0;
+}
+
+
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3>  
+The smallest element in the array is: 1
+
+</pre>
+
+        <pre>
+<br>
+<b id="recQ7">7.ENTER THE NUMBER FROM THE USER AND ADD ALL DIGITS OF THE NUMBER USING RECURSION.</b>
+
+#include &lt;stdio.h&gt;
+
+int sumOfDigits(int n) 
+{
+    if (n == 0) 
+    {
+        return 0;
+    }
+    return (n % 10) + sumOfDigits(n / 10);
+}
+
+int main() 
+{
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    int sum = sumOfDigits(number);
+    printf("The sum of the digits is: %d\n", sum);
+    
+    return 0;
+}
+
+
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3> 
+Enter a number: 5654
+The sum of the digits is: 20 
+</pre>
+
+        <pre>
+<br>
+<b id="recQ8">8.FIND THE ARITHMETIC MEAN OF AN INTEGER ARRAY USING RECURSION.</b>
+
+#include &lt;stdio.h&gt;
+
+float calculateSum(int arr[], int size) 
+{
+    if (size == 0) 
+    {
+        return 0;
+    }
+    return arr[size - 1] + calculateSum(arr, size - 1);
+}
+
+float calculateMean(int arr[], int size) 
+{
+    if (size == 0) 
+    {
+        return 0; // To avoid division by zero
+    }
+    float sum = calculateSum(arr, size);
+    return sum / size;
+}
+
+int main() 
+{
+    int size, i;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &size);
+    int arr[size];
+    printf("Enter %d elements:\n", size);
+    for (i = 0; i &lt; size; i++) 
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    float mean = calculateMean(arr, size);
+    printf("The arithmetic mean of the array is: %.2f\n", mean);
+    
+    return 0;
+}
+
+</pre>
+<pre class="out">
+<h3 style="text-align: center;">OUTPUT</h3>
+Enter the number of elements in the array: 5
+Enter 5 elements:
+2
+4
+5
+52
+2222
+The arithmetic mean of the array is: 457.00  
+</pre>
+       
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+
+        // Get the button
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                }
+            });
+        });
+        document.querySelectorAll(".topic-section").forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

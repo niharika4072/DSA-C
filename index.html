@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Hub</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Programming Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-code"></i> Programs</a>
+                    <div class="dropdown-content">
+                        <a href="2D array.html"><i class="fas fa-th"></i> 2D Array</a>
+                        <a href="searchingalgo.html"><i class="fas fa-search"></i> Searching Algorithms</a>
+                        <a href="graph.html"><i class="fas fa-project-diagram"></i> Graphs</a>
+                        <a href="recursion.html"><i class="fas fa-undo-alt"></i> Recursion</a>
+                        <a href="LL.html"><i class="fas fa-link"></i> Linked Lists</a>
+                        <a href="queues.html"><i class="fas fa-hourglass-half"></i> Queues</a>
+                        <a href="singleDarray.html"><i class="fas fa-border-all"></i> Single Dimension Array</a>
+                        <a href="Stacks.html"><i class="fas fa-layer-group"></i> Stacks</a>
+                        <a href="string.html"><i class="fas fa-font"></i> Strings</a>
+                        <a href="trees.html"><i class="fas fa-tree"></i> Trees</a>
+                        <a href="sortingalgo.html"><i class="fas fa-sort"></i> Sorting Algorithms</a>
+                    </div>
+                </li>
+                <li><a href="#data-structures"><i class="fas fa-database"></i> Data Structures</a></li>
+                <li><a href="loginform.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sticky Social Bar -->
+    <div id="social-bar">
+        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+    </div>
+
+    <!-- Quotes Slideshow Section -->
+    <section class="slideshow">
+        <div class="quote-slide active">
+            <p>"Programs must be written for people to read, and only incidentally for machines to execute."</p>
+            <h4>- Harold Abelson</h4>
+        </div>
+        <div class="quote-slide">
+            <p>"The computer was born to solve problems that did not exist before."</p>
+            <h4>- Bill Gates</h4>
+        </div>
+        <div class="quote-slide">
+            <p>"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code."</p>
+            <h4>- Dan Salomon</h4>
+        </div>
+        <div class="quote-slide">
+            <p>"In programming, the hard part isn’t solving problems, but deciding what problems to solve."</p>
+            <h4>- Paul Graham</h4>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Learn Programming Effortlessly</h2>
+            <p>Your one-stop solution to mastering coding, algorithms, and much more.</p>
+            <button onclick="scrollToPrograms()">Explore Programs</button>
+        </div>
+    </section>
+
+    <!-- Data Structures Information Section -->
+    <section id="data-structures" class="content-section">
+        <h2>Data Structures Overview</h2>
+        <p>Data structures help organize and store data in an efficient way, making them essential for programming and computer science.</p>
+
+        <!-- Arrays Section -->
+        <div class="topic-section fade-in">
+            <h3>Arrays</h3>
+            <p>Arrays are collections of items stored at contiguous memory locations. They allow efficient access to elements using an index.</p>
+        </div>
+
+        <!-- Linked Lists Section -->
+        <div class="topic-section fade-in">
+            <h3>Linked Lists</h3>
+            <p>Linked lists are data structures consisting of nodes. Each node contains data and a reference to the next node.</p>
+        </div>
+
+         <!-- Stacks Section -->
+         <div class="topic-section fade-in">
+            <h3>Stacks</h3>
+            <p>A stack follows the Last-In-First-Out (LIFO) principle, where elements are added and removed from the top of the stack.</p>
+        </div>
+
+        <!-- Trees Section -->
+        <div class="topic-section fade-in">
+            <h3>Trees</h3>
+            <p>Trees are hierarchical structures with a root node and child nodes, commonly used for representing hierarchical data.</p>
+        </div>
+
+        <!-- Graphs Section -->
+        <div class="topic-section fade-in">
+            <h3>Graphs</h3>
+            <p>Graphs consist of nodes connected by edges and are used to represent relationships between objects.</p>
+        </div>
+
+        <!-- Searching Algorithms Section -->
+        <div class="topic-section fade-in">
+            <h3>Searching Algorithms</h3>
+            <p>Searching algorithms help locate specific data within a data structure, such as linear and binary searches.</p>
+        </div>
+
+        <!-- Sorting Algorithms Section -->
+        <div class="topic-section fade-in">
+            <h3>Sorting Algorithms</h3>
+            <p>Sorting algorithms arrange data in a particular order, commonly used algorithms include bubble sort, merge sort, and quicksort.</p>
+        </div>
+
+        <!-- Recursion Section -->
+        <div class="topic-section fade-in">
+            <h3>Recursion</h3>
+            <p>Recursion is a technique where a function calls itself, useful for solving problems that can be divided into smaller, similar subproblems.</p>
+        </div>
+
+        <!-- Queues Section -->
+        <div class="topic-section fade-in">
+            <h3>Queues</h3>
+            <p>Queues follow the First-In-First-Out (FIFO) principle, where elements are added at the end and removed from the front.</p>
+        </div>
+
+        <!-- String Section -->
+        <div class="topic-section fade-in">
+            <h3>Strings</h3>
+            <p>Strings represent sequences of characters and are fundamental data types used for text processing and manipulation.</p>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>© 2024 Programming Hub | All Rights Reserved</p>
+    </footer>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .content-section h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Slideshow Styling */
+        .slideshow {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .quote-slide {
+            display: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .quote-slide.active {
+            display: block;
+        }
+
+        /* Topic Section Styling */
+        .topic-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .topic-section.fade-in {
+            opacity: 1;
+        }
+        .topic-image {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        /* Sticky Social Bar */
+        #social-bar {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #333;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+            transition: opacity 0.3s;
+            opacity: 0.5;
+        }
+        #social-bar:hover {
+            opacity: 1;
+        }
+        .social-link {
+            color: #fff;
+            font-size: 20px;
+            margin: 10px 0;
+            display: block;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        // Quote Slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".quote-slide");
+
+        function showSlide() {
+            slides.forEach(slide => slide.classList.remove("active"));
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+        setInterval(showSlide, 5000);
+
+        // Intersection Observer for Fade-in Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                }
+            });
+        });
+        document.querySelectorAll(".topic-section").forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
